@@ -48,3 +48,12 @@ h2{
     font-size: 20px;
     background: green;
 }
+
+p{
+
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 12px;
+font-weight: bold;
+
+}
