@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+
+.heading{
+    margin: auto;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.content div{
+    margin: 5px;
+}
+.form-div{
+    height: 200px;
+    width: 300px;
+
+}
+#task{
+    height: 40px;
+    border: 1px salmon 1px;
+    background: rgb(213, 192, 235);
+    color: rgb(245, 91, 91);
+    font-size: 20px;
+    font-weight: bold;
+}
+#submit{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 180px;
+    height: 30px;
+    background:rgb(64, 143, 75)
+}
+.details{
+    height: 200px;
+    width: 300px;
+    background: rgb(241, 238, 243); 
+}
+.details h3{
+    margin: auto;
+    text-align: center;
+}
