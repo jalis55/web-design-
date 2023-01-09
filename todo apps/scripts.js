@@ -1,11 +1,15 @@
-let submitBtn=document.querySelector("#submit");
-// console.log(submitBtn);
+let form=document.querySelector("#form");
+let task=document.querySelector("#task");
 
-submitBtn.addEventListener("click",todoapp);
+
+form.addEventListener("submit",todoapp);
 
 function todoapp(e){
-    let task=document.querySelector("#task");
-    if (task.value ==""){
+    e.preventDefault();
+    let taskValue=task.value;
+    console.log(taskValue);
+    
+    if (taskValue ==""){
 
         alert("Field can not be empty");
         return false;
@@ -18,8 +22,8 @@ function todoapp(e){
         ol.appendChild(li);
         
     }
-    task.reset();
-    e.preventDefault();
+    
+    
     
 
 
