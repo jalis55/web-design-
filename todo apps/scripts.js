@@ -1,8 +1,7 @@
 let form=document.querySelector("#form");
 let task=document.querySelector("#task");
+let ol=document.querySelector("ol");
 
-
-form.addEventListener("submit",todoapp);
 
 function todoapp(e){
     e.preventDefault();
@@ -16,15 +15,20 @@ function todoapp(e){
     }
     else{
         let li=document.createElement("li");
-        li.innerText=task.value;
-        let ol=document.querySelector("ol");
-        console.log(ol);
+        let p=document.createElement("p");
+        p.innerText=taskValue;
+        let deleteBtn=document.createElement("button");
+        deleteBtn.id="delete";
+        deleteBtn.innerText="Delete";
+        li.appendChild(p);
+        li.appendChild(deleteBtn);
         ol.appendChild(li);
+        //delete task
+        let deleteItem=document.querySelector("#delete");
+        
         
     }
-    
-    
-    
-
-
+    task.value=""
 }
+
+form.addEventListener("submit",todoapp);
