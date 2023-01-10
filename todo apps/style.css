@@ -39,10 +39,14 @@ body{
 }
 .details{
     height: 200px;
-    width: 300px;
+    width: 600px;
+    
     /* background: rgb(241, 238, 243);  */
 }
 .details h3{
     margin: auto;
     text-align: center;
+}
+.details p button{
+    float: left;
 }
