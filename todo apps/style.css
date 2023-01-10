@@ -40,7 +40,7 @@ body{
 .details{
     height: 200px;
     width: 300px;
-    background: rgb(241, 238, 243); 
+    /* background: rgb(241, 238, 243);  */
 }
 .details h3{
     margin: auto;

@@ -3,10 +3,17 @@ let task=document.querySelector("#task");
 let ol=document.querySelector("ol");
 
 
+function deleteTask(e){
+	let task=e.target;
+	let parentTask=task.parentElement;
+	console.log(parentTask);
+	parentTask.remove();
+	
+	
+}
 function todoapp(e){
     e.preventDefault();
     let taskValue=task.value;
-    console.log(taskValue);
     
     if (taskValue ==""){
 
@@ -23,8 +30,7 @@ function todoapp(e){
         li.appendChild(p);
         li.appendChild(deleteBtn);
         ol.appendChild(li);
-        //delete task
-        let deleteItem=document.querySelector("#delete");
+
         
         
     }
@@ -32,3 +38,5 @@ function todoapp(e){
 }
 
 form.addEventListener("submit",todoapp);
+let TaskItem=document.querySelector("#delete");
+TaskItem.addEventListener("click",deleteTask);
