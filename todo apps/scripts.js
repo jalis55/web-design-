@@ -7,7 +7,7 @@ let ol=document.querySelector("ol");
 function todoapp(e){
     e.preventDefault();
     let taskValue=task.value;
-    
+    //if input field is empty
     if (task.value ==""){
 
         alert("Field can not be empty");

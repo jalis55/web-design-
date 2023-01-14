@@ -1,6 +1,6 @@
 
 let btn=document.querySelector("button")
-let quates=document.querySelector("#quates")
+let quates=document.querySelector("#quotes")
 
 btn.addEventListener("click",getQuates)
 
