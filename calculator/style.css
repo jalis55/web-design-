@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.card{
+    margin:0 auto;
+    max-width: 365px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    font-size: 0;
+
+}
+.card #calc-input{
+    height: 60px;
+    width: 70%;
+    text-align: right;
+    padding: 0 5px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+.card-body{
+    margin-top: 5px;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    background-color: rgb(110, 83, 173);
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: wheat;
+
+}
+.btn-left{
+    background-color: rgb(23, 165, 118);
+}
+.btn:hover{
+    background-color: brown;
+}
