@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cointainer {
+    background: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #151516;
+}
