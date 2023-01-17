@@ -9,3 +9,62 @@
     min-height: 100vh;
     border: 10px solid #151516;
 }
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    font-size: 0;
+    align-items: flex-end;
+
+}
+
+.heading-left {
+    border-radius: 45%;
+    overflow: hidden;
+}
+
+.heading-left,
+img {
+    height: 300px;
+    width: 320px;
+
+}
+
+
+
+.heading-right h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: rgb(131, 129, 47);
+
+}
+
+.heading-right h5 {
+    font-size: 40px;
+    text-align: end;
+    color: rgb(136, 111, 196);
+}
+
+.early-life {
+    margin-top: 10px;
+
+}
+
+.early-life h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.early-life p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
