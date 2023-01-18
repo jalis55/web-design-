@@ -3,7 +3,10 @@ let quotes=document.querySelector("#quotes")
 btn.addEventListener('click',getQuotes)
 
 function getQuotes(){
-    fetch("https://dummyjson.com/quotes/random")
+	
+	let item=Math.floor(Math.random() * 100)
+	
+    fetch(`https://dummyjson.com/quotes/${item}`)
     .then(res=>res.json())
     .then(d=>{
         quotes.innerText=""

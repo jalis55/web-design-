@@ -5,8 +5,10 @@ let quates=document.querySelector("#quotes")
 btn.addEventListener("click",getQuates)
 
 function getQuates(){
+	let item=Math.floor(Math.random() * 100)
+	
     let xhr=new XMLHttpRequest()
-    xhr.open("GET","https://dummyjson.com/quotes/random")
+    xhr.open("GET",`https://dummyjson.com/quotes/${item}`)
     xhr.onload=function(){
         if (this.status===200){
             quates.innerText=""
@@ -28,5 +30,5 @@ function getQuates(){
         }
     }
     xhr.send();
-    console.log(xhr)
+    
 }
