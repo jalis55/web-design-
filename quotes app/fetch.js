@@ -10,6 +10,7 @@ function getQuotes(){
     .then(res=>res.json())
     .then(d=>{
         quotes.innerText=""
+		quotes.classList.add("quotes-style")
         h1Tag=document.createElement("h1")
         h4Tag=document.createElement("h4")
         h1Tag.innerText=`"${d.quote}"`

@@ -12,6 +12,7 @@ function getQuates(){
     xhr.onload=function(){
         if (this.status===200){
             quates.innerText=""
+			quotes.classList.add("quotes-style")
             let quatesData=JSON.parse(this.responseText)
             let h2Tag=document.createElement("h2")
             let h5Tag=document.createElement("h5")
