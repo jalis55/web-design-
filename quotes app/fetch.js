@@ -5,11 +5,12 @@ btn.addEventListener('click',getQuotes)
 function getQuotes(){
 	
 	let item=Math.floor(Math.random() * 100)
-	
+
     fetch(`https://dummyjson.com/quotes/${item}`)
     .then(res=>res.json())
     .then(d=>{
         quotes.innerText=""
+		//add class
 		quotes.classList.add("quotes-style")
         h1Tag=document.createElement("h1")
         h4Tag=document.createElement("h4")
