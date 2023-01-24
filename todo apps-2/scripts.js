@@ -7,6 +7,8 @@ let inputVal = document.querySelector("#input")
 let msg = document.querySelector("#msg")
 let post = document.querySelector("#posts")
 
+let data = {}
+
 form.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("btn clicked")
@@ -19,5 +21,26 @@ let validation = () => {
     }
     else {
         msg.innerText = ""
+        acceptData()
     }
+}
+
+let acceptData = () => {
+    data["text"] = inputVal.value
+    createPost()
+
+}
+let createPost = () => {
+    post.innerHTML += `
+    <div>
+    <p>${data.text}</p>
+    <span class="options">
+        <i class="fas fa-edit"></i>
+        <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+    </span>
+    </div>`
+}
+let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+
 }
