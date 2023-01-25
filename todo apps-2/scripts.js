@@ -9,7 +9,7 @@ let post = document.querySelector("#posts")
 
 let data = {}
 
-form.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("btn clicked")
     validation()
