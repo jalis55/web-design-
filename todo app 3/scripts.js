@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault()
-        console.log(e.target)
+        
         if (!inputVal.value) {
             alert("Please insert a task")
             return;
@@ -44,6 +44,11 @@ window.addEventListener("load", () => {
             actionDiv.appendChild(delete_btn)
 
             parentDiv.appendChild(actionDiv)
+
+            delete_btn.addEventListener("click", (e) => {
+                let el=e.target
+                console.log(el.parentElement.parentElement.remove())
+            })
             
             
             
