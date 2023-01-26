@@ -22,8 +22,7 @@ window.addEventListener("load", () => {
             input_content.classList.add("text")
             input_content.type = "text"
             input_content.value = inputVal.value
-            input_content.setAttribute = ("readonly", "readonly")
-            
+            input_content.setAttribute('readonly', 'readonly');
             contentDiv.appendChild(input_content)
             parentDiv.appendChild(contentDiv)
             task_list.append(parentDiv)
@@ -44,6 +43,21 @@ window.addEventListener("load", () => {
             actionDiv.appendChild(delete_btn)
 
             parentDiv.appendChild(actionDiv)
+
+            edit_btn.addEventListener("click", (e) => {
+                if (edit_btn.innerHTML.toLowerCase() == 'edit') {
+                    
+                    input_content.removeAttribute('readonly')
+                    input_content.focus();
+
+                    edit_btn.innerHTML="Save"
+                }
+                else {
+                    input_content.setAttribute('readonly', 'readonly')
+                    edit_btn.innerHTML="Edit"
+
+                }
+            })
 
             delete_btn.addEventListener("click", (e) => {
                 let el=e.target
