@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault()
-        
+        //validation
         if (!inputVal.value) {
             alert("Please insert a task")
             return;
@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
             actionDiv.appendChild(delete_btn)
 
             parentDiv.appendChild(actionDiv)
-
+            //edit tasks
             edit_btn.addEventListener("click", (e) => {
                 if (edit_btn.innerHTML.toLowerCase() == 'edit') {
                     
@@ -59,6 +59,7 @@ window.addEventListener("load", () => {
                 }
             })
 
+            //delete tasks
             delete_btn.addEventListener("click", (e) => {
                 let el=e.target
                 console.log(el.parentElement.parentElement.remove())
